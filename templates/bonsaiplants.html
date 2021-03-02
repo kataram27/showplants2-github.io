@@ -1,0 +1,184 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="{% static "css/fonts.css" %}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>BonsaiPlants</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">showPlants.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'registration' %}">Register Here <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'adminlogin' %}">Admin Login<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plant-Categories
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'show' %}">Show Plants</a>
+              <a class="dropdown-item" href="{% url 'herbal' %}">Harbal Plants</a>
+              <a class="dropdown-item" href="{% url 'bonsai' %}">Bonsai Plants(NA)</a>
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="alert alert-primary" role="alert">
+      Here You Can Get The Information About BonsaiPlants
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/azalea.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Azalea</h5>
+            <p class="card-text">Azalea Bonsai trees hold a very special and prized position in the world of Bonsai connoisseurs.and it is one of the special bonsai tree.which is avaliable in many countries like india,australia,newzeland.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/bahama.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bahama</h5>
+            <p class="card-text">Bahama Berry is known under many different names, some of which include Nashiainaguensis, Moujean Tea.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/bald.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bald</h5>
+            <p class="card-text">Bald Cypress can live up to many, many years, and there are some specimens in particular, which are known to be over 1000 years old.In nature, Bald Cypresses grow in very wet, swampy soils, such as those alongside
+              riverbanks and flood plains With free growing varieties, the structure of the tree follows a circular shape. leaves will fall during winter.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/bamboo.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bamboo</h5>
+            <p class="card-text">Most of the associations which come to your mind when thinking of a bamboo are probably related to the hallow bamboo stems, often used for building fences, for example.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/blackolive.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">BlackOlive</h5>
+            <p class="card-text">Black Olive tree species are among the most highly evaluated among Bonsai connoisseurs.That’s mostly due to the intriguing growth pattern of this type of Olive tree.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/bougainvillea.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Boughainvillea</h5>
+            <p class="card-text">Just like the very mention of the name suggests, the Bonsai Money tree is a symbol of prosperity and luck.Nevertheless, it is believed that owning such a tree will bring wealthy harmony into your home.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/boxwood.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Boxwood</h5>
+            <p class="card-text">Boxwood trees varieties are extremely well-suited for Bonsai cultivation. In fact, if you have ever looked at photos of English landscaping, you have most certainly stumbled across this particular plant.Two of the
+              most famous types of Boxwood tree are the Japanese Boxwood and the Common Boxwood.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "bplants/moneytree.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">MoneyTree</h5>
+            <p class="card-text">Just like the very mention of the name suggests, the Bonsai Money tree is a symbol of prosperity and luck.Nevertheless, it is believed that owning such a tree will bring wealthy harmony into your home.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    offset:300,
+    duration:1000,
+  });
+  </script>
+ </body>
+
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="{% static "css/fonts.css" %}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>HarbalPlants</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">showPlants.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'registration' %}">Register Here <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'adminlogin' %}">Admin Login<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plant-Categories
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'show' %}">Show Plants</a>
+              <a class="dropdown-item" href="{% url 'herbal' %}">Harbal Plants</a>
+              <a class="dropdown-item" href="{% url 'bonsai' %}">Bonsai Plants(NA)</a>
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="alert alert-primary" role="alert">
+      Here You Can Get The Information About HarbalPlants
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/aloevera.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AloeVera</h5>
+            <p class="card-text">Aloe Vera is known for its soothing properties for burns or skin problems. Many people keep an Aloe Vera plant handy in the kitchen for incidental burns. But taken orally, Aloe Vera will also help with digestion,
+              circulation and weight loss. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/cilantro.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Cilantro</h5>
+            <p class="card-text">Cilantro is also known as coriander leaf or Chinese parsley. Cilantro is perfect for adding into spicy foods like chills, and Mexican, Chinese, Southeast Asian and Indian cuisines. The seeds of cilantro are known as
+              coriander.The plant grows early in the season</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/lavender.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Lavender</h5>
+            <p class="card-text">Grown as a condiment and for use in salads and dressings, lavender will give most dishes a slightly sweet flavor. Lavender syrup and dried lavender buds are used in the United States for making lavender scones and
+              marshmallows. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="flip-right">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/lemongrass.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">LemonGrass</h5>
+            <p class="card-text">Lemongrass stalks can provide antioxidants such as beta-carotene and a defense against cancer and eye inflammation. Lemongrass has a strong lemon flavor. You can brew it in tea as well as use it as an herb
+              seasoning.To grow this outdoors, you need to live in at least Zone 9.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-right">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/mint.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mint</h5>
+            <p class="card-text">There are several varieties of mint. You can use it in drinks like mojitos or mint juleps. Or add some mint to your summer iced tea. Mint freshens the breath and will help to calm your stomach. But if you grow mint,
+              remember that it’s considered an invasive plant.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-right">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/oregano.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Oregano</h5>
+            <p class="card-text">Oregano is also part of the mint family and is native to the warm climates of Eurasia and the Mediterranean. Oregano is a perennial plant but in colder climates can be grown as an annual. It is sometimes called wild
+              marjoram and is closely related to sweet marjoram. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/parsley.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Parsley</h5>
+            <p class="card-text">Parsley is a mild bitter herb that can enhance the flavor of your foods. Many consider parsley just to be a curly green garnish for food, but it actually helps things like stews achieve a more balanced flavor. it will
+              stay evergreen all winter long. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "hplants/peppermint.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">PepperMint</h5>
+            <p class="card-text">Like other mints, peppermint is known for aiding digestion and freshening the breath. But peppermint is also a good source of calcium, potassium and Vitamin B. Peppermint is a hybrid mint, being a cross between water
+              mint and spearmint. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    offset:300,
+    duration:1000,
+  });
+  </script>
+</body>
+
+</html>

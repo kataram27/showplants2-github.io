@@ -1,0 +1,190 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "css/fonts.css" %}">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>showplants</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">showPlants.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'registration' %}">Register Here <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'adminlogin' %}">Admin Login<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plant-Categories
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'show' %}">Show Plants</a>
+              <a class="dropdown-item" href="{% url 'herbal' %}">Harbal Plants</a>
+              <a class="dropdown-item" href="{% url 'bonsai' %}">Bonsai Plants(NA)</a>
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="alert alert-primary"  role="alert">
+      Here You Can Get The Information About ShowPlants
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/aricafarm.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AricaFarm</h5>
+            <p class="card-text">Aricafarm is the plants which grows very large . it can be best used as a show plant and it is very great selling plant in india.</p>
+
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/ribbongrass.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">RibbonGrass</h5>
+            <p class="card-text">A plant of any of several ornamental cultivars of reed canary grass having leaf blades striped with white.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/jadeplant.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">JadePlant</h5>
+            <p class="card-text">The jade plant is an evergreen with thick branches. It has thick, shiny, smooth leaves that grow in opposing pairs along the branches</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{%static "plants/sansoveria.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">SansoVeria</h5>
+            <p class="card-text">Sansevieria are evergreen perennials that can grow anywhere from eight inches to 12 feet high. Their sword-like leaves are approximately two feet long. </p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/singhonium.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Singhonium</h5>
+            <p class="card-text">Commonly known, as Goosefoo is a Feng Shui plant. This plant has a distinctive leaf, which changes from arrow shaped to a five lobed form as it matures.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src={% static "plants/songofindia.jpg" %} alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Song Of India</h5>
+            <p class="card-text"> Song of India is a Dr. Seuss-looking plant with bright chartreuse striped leaves that are narrow, pointed and that are spirally arranged on its stems.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/moneyplant.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">MoneyPlant</h5>
+            <p class="card-text">The plant is called a money plant because its leaves resemble coins. It is a perennial and may be grown as either a trailer or a climber.Money Plants generally grows up to 50-60 feet tall. Young plants bear three to
+              four-inch-long heart-shaped leaves.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-in">
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "plants/reddracena.jpg" %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">RedRacena</h5>
+            <p class="card-text"> Commonly known as red-edge dracaena is an evergreen tree that can grow eight to 15 feet high and three to eight feet wide with proper care.</p>
+            <a href="{% url 'registration' %}" class="btn btn-outline-success">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    offset:300,
+    duration:1000,
+  });
+  </script>
+</body>
+
+</html>

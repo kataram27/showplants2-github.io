@@ -1,0 +1,36 @@
+#mypara{
+font-family: 'Sofia', cursive;
+}
+#fname{
+font-family: 'Sofia', cursive;
+}
+#reg{
+  font-family: 'Kaushan Script', cursive;
+}
+#name{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+#address{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+#address2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+#city{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+#pho{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+#zip{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+.niconne{
+  font-family: 'Niconne', cursive;
+}
